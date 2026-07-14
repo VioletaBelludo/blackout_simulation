@@ -1,7 +1,7 @@
 package com.blackout_simulation.model.plant;
 
-import edu.uoc.uoctron.model.location.Location;
-import edu.uoc.uoctron.model.location.LocationException;
+import com.blackout_simulation.model.location.Location;
+import com.blackout_simulation.model.location.LocationException;
 import org.json.JSONObject;
 
 import java.time.Duration;

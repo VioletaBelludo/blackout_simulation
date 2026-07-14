@@ -18,7 +18,7 @@ public class Main {
      * @param args It is not required.
      */
     public static void main(String[] args) {
-        UOCtron.main(args);
+        SimTron.main(args);
     }
 
 }

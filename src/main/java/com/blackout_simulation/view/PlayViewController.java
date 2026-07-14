@@ -1,6 +1,6 @@
 package com.blackout_simulation.view;
 
-import com.blackout_simulation.UOCtron;
+import com.blackout_simulation.SimTron;
 import com.blackout_simulation.controller.Controller;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -138,7 +138,7 @@ public class PlayViewController {
     private void setupBackButton() {
         backButton.setOnAction(e -> {
             try {
-                UOCtron.main.goScene("main");
+                SimTron.main.goScene("main");
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }

@@ -1,6 +1,6 @@
 package com.blackout_simulation.model.plant;
 
-import edu.uoc.uoctron.model.location.LocationException;
+import com.blackout_simulation.model.location.LocationException;
 
 import java.time.Duration;
 import java.time.LocalTime;

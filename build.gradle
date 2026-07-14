@@ -23,6 +23,10 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
+application {
+    mainClass = 'com.blackout_simulation.Main'
+}
+
 test {
     useJUnitPlatform()
 }

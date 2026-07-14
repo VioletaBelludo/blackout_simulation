@@ -1,6 +1,6 @@
 package com.blackout_simulation.view;
 
-import edu.uoc.uoctron.UOCtron;
+import com.blackout_simulation.SimTron;
 import javafx.fxml.FXML;
 
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class MainViewController {
     @FXML
     public void newLogin(){
         try{
-            UOCtron.main.goScene("play");
+            SimTron.main.goScene("play");
         }catch(IOException e){
             System.exit(1);
         }
@@ -25,7 +25,7 @@ public class MainViewController {
     @FXML
     public void readCredits(){
         try{
-            UOCtron.main.goScene("credits");
+            SimTron.main.goScene("credits");
         }catch(IOException e){
             System.exit(1);
         }
