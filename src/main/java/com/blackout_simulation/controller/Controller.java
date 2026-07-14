@@ -175,7 +175,7 @@ public class Controller {
     }
 
     /**
-     * Return the simulation results in JSON format.
+     * Return simulation results in JSON format.
      */
     public JSONArray getSimulationResults() {
         JSONArray jsonArray = new JSONArray();
