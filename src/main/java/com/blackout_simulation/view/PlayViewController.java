@@ -1,7 +1,7 @@
 package com.blackout_simulation.view;
 
-import edu.uoc.uoctron.UOCtron;
-import edu.uoc.uoctron.controller.UOCtronController;
+import com.blackout_simulation.UOCtron;
+import com.blackout_simulation.controller.Controller;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -31,7 +31,7 @@ import java.util.*;
  */
 public class PlayViewController {
 
-    private UOCtronController controller;
+    private Controller controller;
 
     @FXML
     private Pane mapPane;
@@ -47,7 +47,7 @@ public class PlayViewController {
 
     @FXML
     public void initialize() {
-        controller = new UOCtronController("plants.txt", "demand_forecast.txt");
+        controller = new Controller("plants.txt", "demand_forecast.txt");
         loadPlants();
         setupBackButton();
 

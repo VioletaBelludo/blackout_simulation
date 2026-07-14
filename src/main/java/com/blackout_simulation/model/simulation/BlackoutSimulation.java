@@ -4,8 +4,8 @@ import com.blackout_simulation.model.plant.PlantState;
 import com.blackout_simulation.model.plant.PowerPlant;
 import com.blackout_simulation.model.plant.PowerPlantException;
 import com.blackout_simulation.model.plant.RenewablePlant;
-import edu.uoc.uoctron.model.demand.MinuteDemand;
-import edu.uoc.uoctron.model.plant.*;
+import com.blackout_simulation.model.demand.MinuteDemand;
+import com.blackout_simulation.model.plant.*;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
