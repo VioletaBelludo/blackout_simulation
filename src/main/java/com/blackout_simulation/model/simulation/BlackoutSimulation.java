@@ -1,9 +1,9 @@
-package com.blackout_simulation.simulation;
+package com.blackout_simulation.model.simulation;
 
-import com.blackout_simulation.plant.PlantState;
-import com.blackout_simulation.plant.PowerPlant;
-import com.blackout_simulation.plant.PowerPlantException;
-import com.blackout_simulation.plant.RenewablePlant;
+import com.blackout_simulation.model.plant.PlantState;
+import com.blackout_simulation.model.plant.PowerPlant;
+import com.blackout_simulation.model.plant.PowerPlantException;
+import com.blackout_simulation.model.plant.RenewablePlant;
 import edu.uoc.uoctron.model.demand.MinuteDemand;
 import edu.uoc.uoctron.model.plant.*;
 

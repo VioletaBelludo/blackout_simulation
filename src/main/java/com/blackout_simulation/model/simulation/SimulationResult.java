@@ -1,4 +1,4 @@
-package com.blackout_simulation.simulation;
+package com.blackout_simulation.model.simulation;
 
 import java.time.LocalDateTime;
 import java.util.Map;

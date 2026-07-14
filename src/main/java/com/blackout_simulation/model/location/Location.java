@@ -1,4 +1,4 @@
-package com.blackout_simulation.location;
+package com.blackout_simulation.model.location;
 
 import org.json.JSONObject;
 

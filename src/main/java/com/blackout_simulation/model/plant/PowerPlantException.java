@@ -1,4 +1,4 @@
-package com.blackout_simulation.plant;
+package com.blackout_simulation.model.plant;
 
 public class PowerPlantException extends Exception {
 

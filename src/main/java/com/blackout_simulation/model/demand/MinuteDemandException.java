@@ -1,4 +1,4 @@
-package com.blackout_simulation.demand;
+package com.blackout_simulation.model.demand;
 
 public class MinuteDemandException extends Exception {
 

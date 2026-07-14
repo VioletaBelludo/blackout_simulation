@@ -1,4 +1,4 @@
-package com.blackout_simulation.plant;
+package com.blackout_simulation.model.plant;
 
 import edu.uoc.uoctron.model.location.Location;
 import edu.uoc.uoctron.model.location.LocationException;

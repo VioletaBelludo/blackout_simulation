@@ -1,10 +1,9 @@
 package com.blackout_simulation.controller;
 
-import com.blackout_simulation.plant.*;
-import edu.uoc.uoctron.model.demand.MinuteDemand;
-import edu.uoc.uoctron.model.plant.*;
-import edu.uoc.uoctron.model.simulation.BlackoutSimulation;
-import edu.uoc.uoctron.model.simulation.SimulationResult;
+import com.blackout_simulation.model.demand.MinuteDemand;
+import com.blackout_simulation.model.plant.*;
+import com.blackout_simulation.model.simulation.BlackoutSimulation;
+import com.blackout_simulation.model.simulation.SimulationResult;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -18,36 +17,29 @@ import java.util.List;
 
 public class Controller {
 
-    // Declare the needed variables here
-
-    /**
-     * List of power plants in the system.
-     */
+    //List of power plants in the system.
     private List<PowerPlant> powerPlants;
 
-    /**
-     * List of hourly demands.
-     */
+    //List of hourly demands.
     private MinuteDemand[] minuteDemands;
 
-    /**
-     * List of simulation results.
-     */
+    //List of simulation results.
     private List<SimulationResult> simulationResults;
+
 
     public Controller(String plansFile, String demandFile) {
         powerPlants = new LinkedList<>();
         minuteDemands = new MinuteDemand[1440];
         simulationResults = new LinkedList<>();
 
-        // Load the plants from the file
+        // Load plants from file
         loadPlants(plansFile);
-        // Load the hourly demand
+        // Load hourly demand
         loadMinuteDemand(demandFile);
     }
 
     /**
-     * Load the plants from a file.
+     * Load plants from file.
      * @param filename The name of the file to load the plants from.
      */
     private void loadPlants(String filename) {
@@ -62,7 +54,7 @@ public class Controller {
                         continue;
                     }
 
-                    // Split the values
+                    // Split values
                     int columns = 6;
                     String[] parts = line.split(",", columns);
                     if (parts.length < columns) {
@@ -86,7 +78,7 @@ public class Controller {
     }
 
     /**
-     * Load the minute demand from a file.
+     * Load minute demand from file.
      * @param filename The name of the file to load the minute demand from.
      */
     private void loadMinuteDemand(String filename) {
@@ -112,14 +104,14 @@ public class Controller {
     }
 
     /**
-     * Add a new power plant to the system.
-     * @param type Type of the plant (e.g., "NUCLEAR", "HYDRO", etc.)
-     * @param name Name of the plant
-     * @param latitude Latitude of the plant
-     * @param longitude Longitude of the plant
-     * @param city City where the plant is located
-     * @param maxCapacityMW Maximum generation capacity of the plant in MW
-     * @param efficiency Efficiency of the plant (0.0 to 1.0)
+     * Add new power plant to system.
+     * @param type Type of plant (e.g., "NUCLEAR", "HYDRO", etc.)
+     * @param name Name of plant
+     * @param latitude Latitude of plant
+     * @param longitude Longitude of plant
+     * @param city City where plant is located
+     * @param maxCapacityMW Max generation capacity of plant in MW
+     * @param efficiency Efficiency of plant (0.0 to 1.0)
      */
     private void addPlant(String type, String name, double latitude, double longitude, String city, double maxCapacityMW, double efficiency) {
         try {
@@ -142,9 +134,9 @@ public class Controller {
     }
 
     /**
-     * Add a new minute demand to the system.
-     * @param time The time of the demand
-     * @param demand The demand value
+     * Add new minute demand to the system.
+     * @param time Time of demand
+     * @param demand Demand value
      */
     private void addMinuteDemand(LocalTime time, double demand) {
         try {
@@ -156,16 +148,16 @@ public class Controller {
     }
 
     /**
-     * Get the power plants in the system.
-     * @return An array of power plants
+     * Get power plants in the system.
+     * @return Array of power plants
      */
     public Object[] getPowerPlants() {
         return powerPlants.toArray();
     }
 
     /**
-     * Simulate a blackout according to the given start time.
-     * @param blackoutStart The start time of the blackout
+     * Simulate blackout according to given start time.
+     * @param blackoutStart Start time of blackout
      */
     public void runBlackoutSimulation(LocalDateTime blackoutStart) {
         try {
