@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="500" prefWidth="650" styleClass="bg-play" stylesheets="@../styles/uoc.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackout_simulation.view.PlayViewController">
+<AnchorPane prefHeight="500" prefWidth="650" styleClass="bg-play" stylesheets="@../styles/blackout_simulation.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackout_simulation.view.PlayViewController">
     <Button styleClass="btn" text="Back" fx:id="backButton" onAction="#setupBackButton"
             AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"/>
     <Pane fx:id="mapPane" prefHeight="400" prefWidth="630"
