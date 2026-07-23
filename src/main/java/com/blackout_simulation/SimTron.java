@@ -24,7 +24,7 @@ public class SimTron extends Application {
     /**
      * Project's title.
      */
-    private final static String TITLE = "UOCtron | PRAC 2024-2";
+    private final static String TITLE = "SimTron | 2026";
 
     /**
      * It is a reference to this class so that other classes related to the different views can use it.
