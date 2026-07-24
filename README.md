@@ -1,4 +1,4 @@
-# Simulador de Recuperación de Red Eléctrica (Grid Recovery Simulator)
+# Simulador de recuperación de red eléctrica 
 
 ![Java](https://img.shields.io/badge/Java-17/21%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaFX](https://img.shields.io/badge/JavaFX-4796FC?style=for-the-badge&logo=java&logoColor=white)
@@ -9,33 +9,23 @@
 ![MVC](https://img.shields.io/badge/JSON-orange?style=for-the-badge)
 
 
-## Descripción del Proyecto
+## Descripción del proyecto
 
 Aplicación de simulación interactiva diseñada para modelar la recuperación de un sistema de red eléctrica tras un cero eléctrico o *blackout*. 
 
 La aplicación carga los datos de múltiples plantas generadoras distribuidas geográficamente en la península ibérica y, a través de una interfaz gráfica intuitiva, permite al usuario visualizar las estaciones de generación, configurar la fecha y hora de un apagón y observar cómo la red recupera su estabilidad de forma paulatina a lo largo de las siguientes 36 horas.
 
 
-## ✨ Características Principales
+## Características principales
 
-* **Visualización Geográfica:** Mapeo de todas las plantas de energía sobre el territorio a través de una interfaz gráfica dinámica.
-* **Motor de Simulación Avanzado:** Calcula minuto a minuto el balance entre la generación de electricidad y la demanda prevista, aplicando tiempos de reinicio realistas y cuotas de estabilidad térmica y renovable.
-* **Manejo de Datos Flexibles:** Carga automática del estado de las plantas y previsiones de demanda desde archivos de texto y estructuración de resultados de la simulación en formato estándar **JSON**.
+* **Visualización geográfica:** Mapeo de todas las plantas de energía sobre el territorio a través de una interfaz gráfica dinámica.
+* **Motor de simulación avanzado:** Calcula el balance entre la generación de electricidad y la demanda prevista cada minuto, aplicando tiempos de reinicio realistas y cuotas de estabilidad térmica y renovable.
+* **Manejo de datos flexibles:** Carga automática del estado de las plantas y previsiones de demanda desde archivos de texto y estructuración de resultados de la simulación en formato estándar **JSON**.
 * **Arquitectura Escalable:** Implementación estricta del patrón de diseño **Modelo-Vista-Controlador (MVC)**, garantizando un bajo acoplamiento entre la lógica de negocio, la gestión de datos y la interfaz de usuario.
 
 ---
 
-## 🏗 Arquitectura del Sistema (Patrón MVC)
-
-El proyecto está diseñado bajo el patrón **Modelo-Vista-Controlador**, asegurando un código limpio, modularizado y mantenible:
-
-1. **Modelo (`model`):** Gestiona el estado de la aplicación. Almacena las instancias de las diferentes plantas (Biomasa, Eólica, Nuclear, etc.), maneja las previsiones de demanda energética por minuto e indexa los resultados históricos de las simulaciones. Controla validaciones físicas, como asegurar que las coordenadas (latitud/longitud) estén en un rango válido.
-2. **Controlador (`controller`):** Actúa como el motor lógico y el intermediario. Carga los datos iniciales, ejecuta el algoritmo de simulación del apagón y toma decisiones en tiempo real sobre qué fuentes de energía arrancar priorizando la estabilidad y el tipo de energía.
-3. **Vista (`view`):** Compuesta por interfaces FXML diseñadas de forma interactiva. Se encarga de capturar la entrada del usuario (ej. fecha y hora de la simulación) y renderizar dinámicamente los gráficos y mapas de resultados.
-
----
-
-## ⚙️ Reglas del Motor de Simulación
+## Reglas del motor de simulación
 
 Al desencadenar una simulación de *Cero Eléctrico* (Blackout), el sistema aplica las siguientes reglas algorítmicas de balance energético minuto a minuto:
 
