@@ -23,7 +23,17 @@ La aplicación carga los datos de múltiples plantas generadoras distribuidas ge
 * **Manejo de datos flexibles:** Carga automática del estado de las plantas y previsiones de demanda desde archivos de texto y estructuración de resultados de la simulación en formato estándar **JSON**.
 * **Arquitectura Escalable:** Implementación estricta del patrón de diseño **Modelo-Vista-Controlador (MVC)**, garantizando un bajo acoplamiento entre la lógica de negocio, la gestión de datos y la interfaz de usuario.
 
+
+## Tecnologías utilizadas
+
+* **Lenguaje:** Java (JDK >= 21)
+* **Interfaz gráfica:** JavaFX 
+* **Construcción y dependencias:** Gradle
+* **Pruebas unitarias:** JUnit 
+* **Formato de exportación de datos:** JSON (`org.json`)
+
 ---
+
 
 ## Reglas del motor de simulación
 
@@ -35,7 +45,6 @@ Al desencadenar una simulación de cero eléctrico, el sistema aplica las siguie
 4. **Control de estabilidad estricto (Restricción del 70%):** La red exige un servicio estable (sin sobrecargas ni caídas). Si tras el reparto, la estabilidad media ponderada cae por debajo de **0.7 (70%)**, el sistema desconecta paulatinamente las fuentes renovables menos estables hasta alcanzar este umbral de seguridad, compensando el déficit nuevamente con energía nuclear y térmica.
 5. **Capping de demanda:** En ningún escenario la electricidad generada superará la demanda prevista para un minuto determinado. En situaciones críticas, habrá zonas de la red que quedarán desabastecidas temporalmente hasta que las plantas con arranques lentos completen su tiempo de reinicio.
 
----
 
 ## Especificaciones de las plantas generadoras
 
@@ -56,11 +65,3 @@ El comportamiento de la red depende del tipo de planta, su disponibilidad, tiemp
 *Todas las plantas renovables cuentan con un parámetro dinámico de eficiencia (por defecto 100%).*
 
 ---
-
-## Tecnologías utilizadas
-
-* **Lenguaje:** Java (JDK >= 21)
-* **Interfaz gráfica:** JavaFX 
-* **Construcción y dependencias:** Gradle
-* **Pruebas unitarias:** JUnit 
-* **Formato de exportación de datos:** JSON (`org.json`)
