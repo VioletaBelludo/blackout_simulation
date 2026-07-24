@@ -4,9 +4,8 @@
 ![JavaFX](https://img.shields.io/badge/JavaFX-4796FC?style=for-the-badge&logo=java&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
 ![MVC](https://img.shields.io/badge/MVC-brightgreen?style=for-the-badge)
-![MVC](https://img.shields.io/badge/JUnit-blue?style=for-the-badge)
-![MVC](https://img.shields.io/badge/CSS-pink?style=for-the-badge)
-![MVC](https://img.shields.io/badge/JSON-orange?style=for-the-badge)
+![JUnit](https://img.shields.io/badge/JUnit-blue?style=for-the-badge)
+![JSON](https://img.shields.io/badge/JSON-orange?style=for-the-badge)
 
 
 ## Descripción del proyecto
