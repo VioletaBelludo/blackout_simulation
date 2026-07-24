@@ -1,4 +1,4 @@
-# ⚡ Simulador de Recuperación de Red Eléctrica (Grid Recovery Simulator)
+# Simulador de Recuperación de Red Eléctrica (Grid Recovery Simulator)
 
 ![Java](https://img.shields.io/badge/Java-17/21%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaFX](https://img.shields.io/badge/JavaFX-4796FC?style=for-the-badge&logo=java&logoColor=white)
@@ -9,11 +9,12 @@
 ![MVC](https://img.shields.io/badge/JSON-orange?style=for-the-badge)
 
 
-## 📖 Descripción del Proyecto
+## Descripción del Proyecto
 
-Este proyecto es una aplicación de simulación interactiva diseñada para modelar la recuperación de todo un sistema de red eléctrica tras un apagón masivo (conocido como *cero eléctrico* o *blackout*). 
+Aplicación de simulación interactiva diseñada para modelar la recuperación de un sistema de red eléctrica tras un cero eléctrico o *blackout*. 
 
-A través de una interfaz gráfica intuitiva, la aplicación carga datos de múltiples plantas generadoras distribuidas geográficamente (enfocado en la península ibérica), permitiendo a los usuarios visualizar las estaciones de generación, configurar la fecha y hora de un apagón y observar cómo la red recupera su estabilidad de forma paulatina a lo largo de las siguientes 36 horas.
+La aplicación carga los datos de múltiples plantas generadoras distribuidas geográficamente en la península ibérica y, a través de una interfaz gráfica intuitiva, permite al usuario visualizar las estaciones de generación, configurar la fecha y hora de un apagón y observar cómo la red recupera su estabilidad de forma paulatina a lo largo de las siguientes 36 horas.
+
 
 ## ✨ Características Principales
 
