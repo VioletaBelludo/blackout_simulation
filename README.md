@@ -65,4 +65,4 @@ El comportamiento de la red depende del tipo de planta, su disponibilidad, tiemp
 
 ---
 
-**Esta aplicación ha sido desarrollada como proyecto universitario para la asignatura de dDiseño y Programación Orientada a Objetos**
+**Esta aplicación ha sido desarrollada como proyecto universitario para la asignatura de dDiseño y Programación Orientada a Objetos.**
