@@ -64,3 +64,5 @@ El comportamiento de la red depende del tipo de planta, su disponibilidad, tiemp
 *Todas las plantas renovables cuentan con un parámetro dinámico de eficiencia (por defecto 100%).*
 
 ---
+
+**Esta aplicación ha sido desarrollada como proyecto universitario para la asignatura de dDiseño y Programación Orientada a Objetos**
